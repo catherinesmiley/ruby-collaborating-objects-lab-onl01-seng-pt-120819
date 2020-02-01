@@ -1,37 +1,37 @@
-require 'pry'
+# require 'pry'
 
-class Song 
+# class Song 
   
-  attr_accessor :artist, :name 
+#   attr_accessor :artist, :name 
   
-  @@all = []
+#   @@all = []
   
-  def initialize(name)
-    @name = name 
-    save 
-  end
+#   def initialize(name)
+#     @name = name 
+#     save 
+#   end
   
-  def save 
-    @@all << self 
-  end 
+#   def save 
+#     @@all << self 
+#   end 
   
-  def self.all 
-    @@all 
-  end 
+#   def self.all 
+#     @@all 
+#   end 
   
-  def self.new_by_filename(file_name)
-    song = file_name.split(" - ")[1]
-    new_artist = file_name.split(" - ")[0]
-    new_song = self.new(song)
-    new_song.artist = Artist.new(new_artist)
-    new_song
-  end
+#   def self.new_by_filename(file_name)
+#     song = file_name.split(" - ")[1]
+#     new_artist = file_name.split(" - ")[0]
+#     new_song = self.new(song)
+#     new_song.artist = Artist.new(new_artist)
+#     new_song
+#   end
 
-  def artist_name=(name)
-    self.artist = Artist.find_or_create_by_name(name)
-  end
+#   def artist_name=(name)
+#     self.artist = Artist.find_or_create_by_name(name)
+#   end
   
-end
+# end
 
 
 
