@@ -50,7 +50,7 @@ class MP3Importer
   end 
   
   def files 
-    Dir
+    Dir.entries()
   end 
   
   def import 
