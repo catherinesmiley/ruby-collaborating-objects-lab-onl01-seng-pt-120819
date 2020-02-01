@@ -39,7 +39,7 @@
 
 
 
-
+require 'pry'
 
 class MP3Importer
   
@@ -50,7 +50,8 @@ class MP3Importer
   end 
   
   def files 
-    Dir.entries()
+    binding.pry 
+    Dir.entries('./spec/fixtures')
   end 
   
   def import 
