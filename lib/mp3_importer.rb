@@ -50,8 +50,7 @@ class MP3Importer
   end 
   
   def files 
-    binding.pry 
-    Dir.entries('./spec/fixtures')
+    Dir.entries('./spec/fixtures').grep(".mp3")
   end 
   
   def import 
