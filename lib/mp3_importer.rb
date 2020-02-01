@@ -53,7 +53,8 @@ class MP3Importer
     Dir.entries(@path).grep(/.mp3/)
   end 
   
-  def import 
+  def import(files)
+    Song.new_by_filename(files)
   end 
 
 end 
