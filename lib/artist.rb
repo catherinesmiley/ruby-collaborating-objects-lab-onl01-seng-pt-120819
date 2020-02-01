@@ -1,5 +1,3 @@
-require 'pry'
-
 class Artist 
   
   attr_accessor :name
@@ -33,7 +31,6 @@ class Artist
       existing_artist
     else 
       new_artist = self.new(name)
-      # new_artist.save
       new_artist
     end
   end 
@@ -43,4 +40,3 @@ class Artist
   end 
   
 end
-
