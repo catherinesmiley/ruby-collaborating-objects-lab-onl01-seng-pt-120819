@@ -50,7 +50,7 @@ class MP3Importer
   end 
   
   def files 
-    
+    Dir
   end 
   
   def import 
